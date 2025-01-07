@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const formPage = window.location.pathname.includes("form.html");
-  const listPage = window.location.pathname.includes("list.html");
+  const formPage = window.location.pathname.includes("./index.html");
+  const listPage = window.location.pathname.includes("./list.html");
 
   const loadProducts = () => JSON.parse(localStorage.getItem("products")) || [];
 
