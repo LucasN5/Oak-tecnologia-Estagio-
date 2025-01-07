@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Produtos</title>
+    <link href="./styles/listStyle.css" rel="stylesheet" />
+    <link href="./styles/reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <section id="listContainer">
+        <div>
+          <h2 id="listTitle">Lista de Produtos</h2>
+        </div>
+
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th class="productsTitle">Produto</th>
+                <th class="productsTitle">Valor</th>
+                <th class="productsTitle">Descrição</th>
+                <th class="productsTitle">Disponibilidade</th>
+                <th class="productsTitle">Excluir</th>
+              </tr>
+            </thead>
+
+            <tbody id="productTableBody"></tbody>
+          </table>
+        </div>
+
+        <div>
+          <a href="./form.html">
+            <button id="buttonListSubmit">Cadastrar novo produto</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

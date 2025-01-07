@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de produtos</title>
+    <link href="./styles/formStyle.css" rel="stylesheet" />
+    <link href="./styles/reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <section id="formContainer">
+        <div id="titleContainer">
+          <h1>Cadastro de Produtos</h1>
+        </div>
+
+        <div id="inputformContainer">
+          <div id="namevalueContainer">
+            <div class="formgroupContainer">
+              <label for="productName">Nome: </label>
+              <input
+                type="text"
+                id="productName"
+                placeholder="Digite o nome do produto"
+                required
+              />
+            </div>
+
+            <div class="formgroupContainer">
+              <label for="productValue"> Valor: </label>
+              <input
+                type="text"
+                id="productValue"
+                placeholder="Digite o valor do produto"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="formgroupContainer">
+            <label for="productDescription"> Descrição: </label>
+            <textarea
+              type="text"
+              id="productDescription"
+              placeholder="Digite a descrição do produto"
+              required
+            ></textarea>
+          </div>
+
+          <div id="productDisponibilityContainer">
+            <label>Está disponível ? </label>
+            <label for="productDisponibilityYes">
+              <input
+                type="radio"
+                name="option"
+                id="productDisponibilityYes"
+                value="sim"
+                required
+              />
+              Sim
+            </label>
+
+            <label for="productDisponibilityNo">
+              <input
+                type="radio"
+                name="option"
+                id="productDisponibilityNo"
+                value="nao"
+                required
+              />
+              Não
+            </label>
+          </div>
+
+          <div id="buttonsContainer">
+            <a>
+              <button id="buttonFormSubmit" type="button">
+                Cadastrar produto
+              </button>
+            </a>
+
+            <a href="./list.html">
+              <button id="buttonFormList">Ver lista de produtos</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

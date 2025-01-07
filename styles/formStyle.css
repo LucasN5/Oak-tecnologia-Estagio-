@@ -1,0 +1,171 @@
+body {
+  height: 100vh;
+  background-color: #121921;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#titleContainer > h1 {
+  color: white;
+  font-family: "Roboto Flex";
+  font-weight: bold;
+  font-size: 40px;
+  cursor: default;
+}
+
+#inputformContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  width: 100%;
+}
+
+#inputformContainer > div > label {
+  font-family: "Roboto Flex";
+  color: white;
+  outline: none;
+}
+
+#inputformContainer > div > textarea {
+  font-family: "Roboto Flex";
+  color: white;
+  outline: none;
+}
+
+.formgroupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.formgroupContainer > label {
+  font-family: "Roboto Flex";
+}
+
+#namevalueContainer {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+#productDescription {
+  width: 365px;
+  height: 150px;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  color: black !important;
+  font-family: "Roboto Flex" !important;
+}
+
+#productDescription::placeholder {
+  text-align: left;
+  display: flex;
+  font-family: "Roboto Flex" !important;
+}
+
+#productDisponibilityContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#productName {
+  padding: 4px;
+}
+
+#productValue {
+  padding: 4px;
+}
+
+#buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#buttonFormSubmit {
+  padding: 8px;
+  font-family: "Roboto Flex";
+  font-weight: bold;
+  background-color: #f0a500;
+  color: #121921;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buttonFormSubmit:hover {
+  background-color: #d18900;
+}
+
+#buttonFormList {
+  padding: 8px;
+  font-family: "Roboto Flex";
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: #121921;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buttonFormList:hover {
+  background-color: #1e40af;
+  color: #f5f5f5;
+}
+
+label {
+  color: white;
+  font-family: "Roboto Flex";
+}
+
+input {
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  font-family: "Roboto Flex" !important;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#disponibilityTitle {
+  color: white;
+  font-family: "Roboto Flex";
+}
